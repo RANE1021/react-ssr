@@ -13,10 +13,8 @@ server.use(webpackIsoDevMiddleware(clientCompiler, serverCompiler));
 
 server.use(webpackHotReload(clientCompiler, { quiet: true }));
 
-server.get("*", (req, res, next) => {
-  //Some Server weback config will make this work
-  console.log("Isomorphic Export", res.locals.isomorphic.exports);
-  const { render } = res.locals.isomorphic.exports;
+server.get("*", (req, res) => {
+  const render = res.locals.isomorphic.exports.default;
 
   render(req, res);
 });

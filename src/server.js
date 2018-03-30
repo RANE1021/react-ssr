@@ -1,7 +1,9 @@
 import App from "./app";
+import React from "react";
+import ReactDomServer from "react-dom/server";
 
 //static render
 
-export default (res, req) => {
-  res.send(/* Static render of app */)
-}
+export default (req, res) => {
+  res.send(ReactDomServer.renderToString(<App />));
+};

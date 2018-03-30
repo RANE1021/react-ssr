@@ -16,12 +16,20 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.html$/,
+        use: {
+          loader: "html-loader"
+        }
       }
     ]
   },
+  target: "node",
   output: {
     path: `${rootPath}/dist/server`,
     publicPath: "/",
-    filename: "[name].js"
+    filename: "[name].js",
+    libraryTarget: "commonjs2"
   }
 };

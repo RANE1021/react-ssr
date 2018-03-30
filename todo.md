@@ -2,6 +2,7 @@
 * Make app.js Load a "Example Container"
 * Make server.js sucessfully static render and "send" to client
 * Make client.js sucessfully load in browser - from static html
+* Make images work
 * Add Fela
   * Add a Static CSS Reset
   * Add styling to an "Example Container"
