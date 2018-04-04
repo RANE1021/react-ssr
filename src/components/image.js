@@ -1,7 +1,12 @@
 import React from "react";
+import image from "../../static/images/gow.jpg";
 
 const Image = () => {
-  return <img src="../../static/images/gow.jpg" />;
+  return (
+    <div>
+      <img src={image} />
+    </div>
+  );
 };
 
 export default Image;

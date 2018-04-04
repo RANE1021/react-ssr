@@ -1,12 +1,13 @@
 import React from "react";
 
-import Example1 from "./containers/examplecontainer";
+import Example1 from "./containers/example";
+import Image from "./components/image";
 
 //Redux, Fela, ReactRouter
 const App = () => (
   <div>
-    <h1>Hola from React!!</h1>
     <Example1 />
+    <Image />
   </div>
 );
 
