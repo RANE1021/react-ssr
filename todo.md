@@ -1,6 +1,6 @@
 * Make Server.config.js work for the isomorphic export (😁)
 * Make app.js Load a "Example Container" (😁)
-* Make server.js sucessfully static render and "send" to client (😁)
+* Make server.js sucessfully static render and "send" to browser
 * Make client.js sucessfully load in browser - from static html (How do I check to see if this is rendering as it was before or from client?)
 * Make images work (😁)
 * Add Fela (prettySelectorsof undefined, fela-connect not working)

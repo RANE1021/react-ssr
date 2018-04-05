@@ -1998,15 +1998,6 @@ fela-dom@^7.0.6:
     fast-loops "^1.0.0"
     fela-utils "^8.0.5"
 
-fela-monolithic@^5.0.20:
-  version "5.0.20"
-  resolved "https://registry.yarnpkg.com/fela-monolithic/-/fela-monolithic-5.0.20.tgz#0d9ac48a740e217fa4b744af2ad04c7280bb1db1"
-  dependencies:
-    css-in-js-utils "^2.0.0"
-    fast-loops "^1.0.0"
-    fela-utils "^8.0.5"
-    isobject "^3.0.1"
-
 fela-tools@^5.1.4:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/fela-tools/-/fela-tools-5.1.4.tgz#3fe20f2135ce607b52a93caad6c695da1cca380c"
@@ -4154,7 +4145,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
