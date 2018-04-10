@@ -8,7 +8,7 @@ module.exports = {
   mode: "development",
   devtool: "inline-source-map",
   entry: {
-    app: `${rootPath}/src/client.js`
+    app: `${rootPath}/src/App/client.js`
   },
   module: {
     rules: [

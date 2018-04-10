@@ -6,7 +6,7 @@ const rootPath = path.resolve(__dirname, "../../");
 module.exports = {
   mode: "development",
   entry: {
-    app: `${rootPath}/src/server.js`
+    app: `${rootPath}/src/App/server.js`
   },
   module: {
     rules: [

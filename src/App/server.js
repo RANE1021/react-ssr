@@ -5,13 +5,13 @@ import { createRenderer } from "fela";
 import { renderToMarkup, render } from "fela-dom";
 
 import App from "./app";
-import indexHtml from "./index";
+import htmlTemplate from "./template";
 
 export default (req, res) => {
   const renderer = createRenderer();
 
   const html = renderToString(<App renderer={renderer} />);
-  const syles = renderToMarkup(renderer);
+  const styles = renderToMarkup(renderer);
 
-  res.send(indexHtml(html, styles));
+  res.send(htmlTemplate({ html, styles }));
 };

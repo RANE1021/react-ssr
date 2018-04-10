@@ -14,6 +14,8 @@
     "@babel/preset-env": "^7.0.0-beta.42",
     "@babel/preset-react": "^7.0.0-beta.42",
     "babel-loader": "^8.0.0-beta",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
     "fela": "^6.1.5",
     "fela-dom": "^7.0.6",

@@ -1,4 +1,4 @@
-const renderPage = ({html, styles}) => {
+const renderPage = ({ html, styles }) => {
   return `
   <!DOCTYPE html>
   <html lang="en">
