@@ -6,7 +6,7 @@ const rootPath = path.resolve(__dirname, "../../");
 module.exports = {
   mode: "development",
   entry: {
-    app: `${rootPath}/src/App/server.js`
+    app: `${rootPath}/src/server.js`
   },
   module: {
     rules: [
@@ -31,6 +31,10 @@ module.exports = {
             name: "[path][name].[ext]"
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [ 'css-loader' ]
       }
     ]
   },

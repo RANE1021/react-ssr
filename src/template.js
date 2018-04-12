@@ -8,7 +8,7 @@ const renderPage = ({ html, styles }) => {
     </head>
     <body>
       <div id="root">${html}</div>
-      <script src="bundle.js"></script>
+      <script src="app.js"></script>
     </body>
   </html>
 `;

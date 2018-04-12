@@ -8,7 +8,7 @@ module.exports = {
   mode: "development",
   devtool: "inline-source-map",
   entry: {
-    app: `${rootPath}/src/App/client.js`
+    app: `${rootPath}/src/client.js`
   },
   module: {
     rules: [
@@ -27,10 +27,13 @@ module.exports = {
             name: "[path][name].[ext]"
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: ["css-loader"]
       }
     ]
   },
-  plugins: [new htmlWebpackPlugin()],
   output: {
     path: `${rootPath}/dist/client`,
     publicPath: "/",
