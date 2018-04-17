@@ -11,7 +11,7 @@ const server = express();
 server.use(webpackIsoDevMiddleware(clientCompiler, serverCompiler));
 server.use(webpackHotReload(clientCompiler, { quiet: true }));
 
-server.get("/", (req, res) => {
+server.get("/*", (req, res) => {
   const render = res.locals.isomorphic.exports.default;
   render(req, res);
 });

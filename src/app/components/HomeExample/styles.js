@@ -1,3 +1,3 @@
 export const fontColor = () => ({
-  color: "#7F00FF"
+  color: "#000000"
 });

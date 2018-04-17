@@ -34,6 +34,11 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new htmlWebpackPlugin({
+      template: `${rootPath}/src/template.js`
+    })
+  ],
   output: {
     path: `${rootPath}/dist/client`,
     publicPath: "/",
