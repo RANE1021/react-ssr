@@ -4,12 +4,14 @@ import { renderToString } from "react-dom/server";
 import { createRenderer } from "fela";
 import { renderToMarkup, render } from "fela-dom";
 import { StaticRouter } from "react-router-dom";
+import { createStore } from "redux"
 
 import App from "./app";
 import htmlTemplate from "./template";
 
 export default (req, res) => {
   const renderer = createRenderer();
+  const store = createStore()
   // context = {}
 
   const html = renderToString(

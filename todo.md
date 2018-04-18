@@ -1,9 +1,9 @@
-* Make Server.config.js work for the isomorphic export (😁)
-* Make app.js Load a "Example Container" (😁)
+* Make Server.config.js work for the isomorphic export 
+* Make app.js Load a "Example Container"
 * Make `./src/app` alias to `~`
 * Make server.js sucessfully static render and "send" to browser (Has something to do with cachign and the manifest? accesing stuff in the dist folder?)
 * Make client.js sucessfully load in browser - from static html (How do I check to see if this is rendering as it was before or from client?)
-* Make images work (😁)
+* Make images work
 * Add Fela (prettySelectorsof undefined, fela-connect not working)
   * Add a Static CSS Reset
   * Add styling to an "Example Container"

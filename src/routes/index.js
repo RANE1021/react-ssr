@@ -2,9 +2,9 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Home from "~/components/HomeExample";
-import Survey from "~/components/ImageExample";
-import About from "~/components/AboutExample"
-import { about, survey } from "./path"
+import Survey from "~/containers/SurveyPage";
+import About from "~/components/AboutExample";
+import { about, survey } from "./path";
 
 export default () => {
   return (
@@ -13,5 +13,5 @@ export default () => {
       <Route path={survey} component={Survey} />
       <Route path={about} component={About} />
     </Switch>
-  )
-}
+  );
+};
