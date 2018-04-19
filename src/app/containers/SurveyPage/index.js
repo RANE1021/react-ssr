@@ -3,7 +3,7 @@ import { connect as connectRedux } from "react-redux"
 
 import * as styles from "./styles"
 import component from "./component"
-import { addYes, addNo, addTotal } from "../../redux/index"
+import { addYes, addNo, addTotal } from "../../store"
 
 export const mapStateToProps = (state) => {
   return {

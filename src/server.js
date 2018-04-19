@@ -4,30 +4,23 @@ import { renderToString } from "react-dom/server";
 import { createRenderer } from "fela";
 import { renderToMarkup, render } from "fela-dom";
 import { StaticRouter } from "react-router-dom";
-import { createStore } from "redux"
 
 import App from "./app";
 import htmlTemplate from "./template";
+import createStore from "~/store";
 
 export default (req, res) => {
   const renderer = createRenderer();
-  const store = createStore()
-  // context = {}
+  const store = createStore();
+  const context = {};
 
   const html = renderToString(
-    <StaticRouter
-      location={req.url}
-      // context={context}
-    >
-      <App renderer={renderer} />
+    <StaticRouter location={req.url} context={context}>
+      <App renderer={renderer} store={store} />
     </StaticRouter>
   );
   const styles = renderToMarkup(renderer);
+  const preloadedState = store.getState();
 
-  // if (context.url) {
-  //   redirect(301, context.url)
-  // } else {
-  //   res.send(htmlTemplate({ html, styles }));
-  // }
-  res.send(htmlTemplate({ html, styles }));
+  res.send(htmlTemplate({ html, styles, preloadedState }));
 };

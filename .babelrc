@@ -9,6 +9,7 @@
           "~": "./src/app"
         }
       }
-    ]
+    ],
+    ["@babel/plugin-proposal-object-rest-spread"]
   ]
 }
