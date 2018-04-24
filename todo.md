@@ -1,4 +1,4 @@
-* Make Server.config.js work for the isomorphic export 
+* Make Server.config.js work for the isomorphic export
 * Make app.js Load a "Example Container"
 * Make `./src/app` alias to `~`
 * Make server.js sucessfully static render and "send" to browser (Has something to do with cachign and the manifest? accesing stuff in the dist folder?)
@@ -15,3 +15,8 @@
   * "Example Component" that displays count
   * "Example Component" that is used twice one onClick does incrementing, other does decrementing
 * Make client happy with content loaded. "I HAD TO CHANGE SOME CONTENT, IM MAD"
+
+*Write tests using enzyme and jest
+  *src/test folder
+  *actual test live in same folder as file
+  *

@@ -6,27 +6,21 @@ import TotalStats from "~/components/SurveyExample/TotalStats";
 import NoButton from "~/components/SurveyExample/NoButton";
 import YesButton from "~/components/SurveyExample/YesButton";
 
-const SurveyPage = ({ yes, no, total, addYes, addNo, styles }) => {
-  const handleYesClick = () => {
-    addYes()
-  }
-  const handleNoClick = () => {
-    addNo()
-  }
+const SurveyPage = ({ yes, no, total, handleAddYes, handleAddNo, styles }) => {
   return (
     <div className={styles.wrapper}>
       <ImageExample />
       <TotalStats yes={yes} no={no} total={total} />
-      <YesButton onYesClick={handleYesClick} />
-      <NoButton onNoClick={handleNoClick} />
+      <button onClick={handleAddYes}>Yes</button>
+      <button onClick={handleAddNo}>No</button>
     </div>
   );
 };
 
 SurveyPage.propTypes = {
   styles: PropTypes.object.isRequired,
-  addNo: PropTypes.func.isRequired,
-  addYes: PropTypes.func.isRequired
+  handleAddNo: PropTypes.func.isRequired,
+  handleAddYes: PropTypes.func.isRequired
 };
 
 export default SurveyPage;

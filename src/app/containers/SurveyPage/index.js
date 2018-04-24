@@ -18,10 +18,10 @@ export const mapStateToProps = state => {
 };
 
 export const mapDispatchToProps = dispatch => ({
-  addYes: () => {
+  handleAddYes: () => {
     dispatch(surveyActions.addYes());
   },
-  addNo: () => {
+  handleAddNo: () => {
     dispatch(surveyActions.addNo());
   }
 });

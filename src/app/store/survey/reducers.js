@@ -1,5 +1,3 @@
-import { combineReducers } from "redux";
-
 import * as types from "./types";
 
 export default (state = {}, action) => {
