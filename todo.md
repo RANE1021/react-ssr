@@ -16,7 +16,12 @@
   * "Example Component" that is used twice one onClick does incrementing, other does decrementing
 * Make client happy with content loaded. "I HAD TO CHANGE SOME CONTENT, IM MAD"
 
+*split containers and pages
+
 *Write tests using enzyme and jest
   *src/test folder
   *actual test live in same folder as file
-  *
+  *pages & routes
+  *index in containers
+  *issue with image in test / load image as prop from styles?
+    *also use snapshot test (might help)
