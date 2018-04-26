@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 
 import ImageExample from "~/components/SurveyExample/ImageExample";
 import TotalStats from "~/components/SurveyExample/TotalStats";
-import NoButton from "~/components/SurveyExample/NoButton";
-import YesButton from "~/components/SurveyExample/YesButton";
 
 const SurveyPage = ({ yes, no, total, handleAddYes, handleAddNo, styles }) => {
   return (
