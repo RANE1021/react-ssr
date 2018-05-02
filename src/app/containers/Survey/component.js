@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ImageExample from "~/components/SurveyExample/ImageExample";
 import TotalStats from "~/components/SurveyExample/TotalStats";
 
-const SurveyPage = ({ yes, no, total, handleAddYes, handleAddNo, styles }) => {
+const SurveyContainer = ({ yes, no, total, handleAddYes, handleAddNo, styles }) => {
   return (
     <div className={styles.wrapper}>
       <ImageExample />
@@ -15,10 +15,10 @@ const SurveyPage = ({ yes, no, total, handleAddYes, handleAddNo, styles }) => {
   );
 };
 
-SurveyPage.propTypes = {
+SurveyContainer.propTypes = {
   styles: PropTypes.object.isRequired,
   handleAddNo: PropTypes.func.isRequired,
   handleAddYes: PropTypes.func.isRequired
 };
 
-export default SurveyPage;
+export default SurveyContainer;

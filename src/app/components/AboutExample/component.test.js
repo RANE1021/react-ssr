@@ -1,5 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
+import { renderer } from "react-test-renderer"
 
 import Example from "./component";
 
@@ -10,4 +11,8 @@ describe("The about component mounts with styles and three divs", () => {
   it("loads with divs", () => {
     expect(shallowExample.find("div").length).toBe(3);
   });
+
+  it('matches previous snapshot', () => {
+    expect(Example).toMatchSnapshot()
+  })
 });

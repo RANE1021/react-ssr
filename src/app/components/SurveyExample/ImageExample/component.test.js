@@ -11,9 +11,9 @@ describe("The footer component mounts with styles and two divs", () => {
     expect(shallowImage.find("div").length).toBe(2);
   });
 
-  it("loads with an image", () => {
-    expect(shallowImage.find("img").length).toBe(1);
-  });
+  it('matches previous snapshot', () => {
+    expect(Image).toMatchSnapshot()
+  })
 });
 
 // snapshot

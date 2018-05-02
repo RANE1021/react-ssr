@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The home component mounts with one div and  matches previous snapshot 1`] = `[Function]`;
+
+exports[`The home component mounts with one div and Ab matches previous snapshot 1`] = `[Function]`;
+
+exports[`The home component mounts with one div and About component matches previous snapshot 1`] = `[Function]`;
+
+exports[`The home component mounts with styles and three divs matches previous snapshot 1`] = `[Function]`;

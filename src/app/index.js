@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { Route, Switch } from "react-router-dom";
 
 import css from "./reset.css";
-import LandingPage from "./containers/LandingPage";
+import LandingPage from "~/pages/Landing";
 
 //Redux, Fela, ReactRouter
 const App = ({ renderer, store }) => {

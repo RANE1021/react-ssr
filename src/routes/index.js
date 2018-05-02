@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Home from "~/components/HomeExample";
-import Survey from "~/containers/SurveyPage";
-import About from "~/components/AboutExample";
+import Home from "~/pages/Landing";
+import Survey from "~/pages/Survey";
+import About from "~/pages/About";
 import { about, survey } from "./path";
 
 export default () => {

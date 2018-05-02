@@ -10,4 +10,8 @@ describe("The home component mounts with styles and three divs", () => {
   it("loads with divs", () => {
     expect(shallowHomeExample.find("div").length).toBe(3);
   });
+
+  it('matches previous snapshot', () => {
+    expect(HomeExample).toMatchSnapshot()
+  })
 });

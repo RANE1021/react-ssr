@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The about component mounts with styles and three divs matches previous snapshot 1`] = `[Function]`;

@@ -14,4 +14,8 @@ describe("The footer component mounts with styles and a div", () => {
   it("loads with 3 NavLinks", () => {
     expect(shallowFooter.find("NavLink").length).toBe(3);
   });
+
+  it('matches previous snapshot', () => {
+    expect(Footer).toMatchSnapshot()
+  })
 });
